@@ -34,6 +34,7 @@ export default function Index() {
         <Loader />
       )
     }
+    
   return (
     <div className="container-fluid">
   <div className="row flex-nowrap">
@@ -118,6 +119,11 @@ export default function Index() {
       </div>
     </div>
     <div className="col py-3">
+      <div className="welcome d-flex gap-5 pb-5">
+        <h1>Welcome Here Again</h1>
+        <button className='btn btn-outline-dark'><Link to='/user/create' className='text-decoration-none fw-bold text-info'>Add New User</Link></button>
+      </div>
+      
    <table className="table">
   <thead>
     <tr>
