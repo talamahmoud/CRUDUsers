@@ -20,6 +20,7 @@ export default function Edit() {
   
   })
   const {id} = useParams('id');
+  
   const getUser = async ()=>{
       const {data} = await axios.get(`https://crud-users-gold.vercel.app/users/${id}`);
       setUser(data.user);
